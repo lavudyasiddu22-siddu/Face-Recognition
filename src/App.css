@@ -1,0 +1,42 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-wrapper {
+  flex: 1;
+  margin-left: calc(var(--sidebar-width) + 32px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: calc(var(--topbar-height) + 32px);
+  margin-right: 16px;
+  margin-bottom: 16px;
+  /* padding is handled inside the views */
+  overflow-y: auto;
+  position: relative;
+}
+
+/* Common Page Container Styles */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.page-content {
+  color: var(--text-primary);
+}
+
+.page-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  background: linear-gradient(90deg, #fff, var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
